@@ -22,8 +22,8 @@ namespace Produtos.Entities {
             StringBuilder sb = new StringBuilder();
             sb.Append(Name);
             sb.Append(" $ ");
-            sb.Append(Price.ToString("F2", CultureInfo.InvariantCulture));
-            sb.Append($"(Customs fee: $ {CustomsFee})");
+            sb.Append(TotalPrice().ToString("F2", CultureInfo.InvariantCulture));
+            sb.Append($" (Customs fee: $ {CustomsFee})");
 
             return sb.ToString();
         }

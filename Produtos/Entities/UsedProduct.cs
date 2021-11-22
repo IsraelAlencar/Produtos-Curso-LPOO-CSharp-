@@ -19,7 +19,7 @@ namespace Produtos.Entities {
             sb.Append(Name);
             sb.Append(" (Used) $ ");
             sb.Append(Price.ToString("F2", CultureInfo.InvariantCulture));
-            sb.Append($"Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")}");
+            sb.Append($" Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")}");
             
             return sb.ToString();
         }
